@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Home</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <base target="_blank">
+  <style>
+    /* for top nav bar */
+    .topnav {
+      overflow: hidden;
+      background-color: white;
+      border: 2px solid;
+    }
+
+    /* for top nav bar attributes*/
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+
+    /* for top nav bar hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+
+    /* for middle blocks display */
+    li a {
+      display: block;
+      padding: 8px;
+      background-color: #dddddd;
+    }
+
+    /* flexbox */
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: DodgerBlue;
+      height: 300px;
+      justify-content: center;
+      background: linear-gradient(to left, DodgerBlue, aquamarine);
+
+    }
+
+
+    /* Delcaring items for grid*/
+    .item1 {grid-area: header;}
+    .item2 {grid-area: menu;}
+
+
+    /* for grid */
+    .grid-container {
+      display: grid;
+      /* Aligning grid-areas */
+      grid-template-areas:
+      'header header header header menu menu'
+      /* Note 6 headers */
+      'header header header header menu menu';
+      /* Note 6 headers */
+      grid-gap: 10px;
+      background-color: wheat;
+      padding: 10px;
+      height: 60vh;
+      width: 100%;
+    }
+
+    /* for grids contents */
+    .grid-container>div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    /* for middle div portion of page */
+    .middleDiv {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: lightgray;
+      height: 150px;
+      justify-content: center;
+    }
+
+    /* focusing on divs within the middle div portion */
+    .middleDiv div {
+      width: 300px;
+      align-items: center;
+      height: 100px;
+      border: 2px solid;
+      border-color: black;
+      background-color: dimgrey;
+      padding: 5px;
+    }
+
+    /* for making middle divs hover effect */
+    .middleDiv div:hover {
+      background-color: #ddd;
+      color: black
+    }
+
+    /* for h2*/
+    h2 {
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+      color: white;
+    }
+
+     /* for h1*/
+    h1 {
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+      color: white;
+      font-size: 100px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+ 
+ <!-- code for top nav bar-->
+ <div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="aboutus.html">About Us </a>
+  <a href="BuidlingPC.html">Build PC</a>
+</div>
+
+  <!-- code for the flex container at top-->
+  <div class="flex-container" style="text-align: center;">
+    <h1> Welcome to InterWeb-Gaming!</h1>
+  </div>
+
+  
+ <!-- code for image at top -->
+ <p><img style="width: 100%; background-color: rgb(17, 17, 16);" src="https://live.staticflickr.com/39/115638541_a7be518950_b.jpg" alt="classic video games"> </p>
+
+
+  <!-- code for the middle div in middle of page -->
+  <div class="middleDiv">
+    <div>
+      <a href="dashboard.html">
+        <h2> Dashboard</h2>
+    </div> </a>
+    <div>
+      <a href="myths.html">
+      <h2> Myths of Gaming </h2>
+    </div> </a>
+    <div>
+      <a href="Oculus.html">
+      <h2>Oculus Quest 2 and VR</h2>
+    </div> </a>
+  </div>
+
+  <!-- code for grid at bottom -->
+  <div class="grid-container">
+    <div class="item1">
+      <font size="5">
+        <p>
+        <h3> Welcome to InterWebs - A place to learn about and be introduced to a few of great games!</h3>
+        <p> This is the home page of InternWebs Gaming. Feel free to browser our links to explore our other websites!
+        </p>
+        <p> We have a lot of offer here. At the top of out home page, there is a navigation bar. It can take you to
+          information about our company, a contact page,
+          and the basics of building a PC.
+        </p>
+        <p> By clicking the middle portions of the page, you'll be able to see the dashboard where our list of games are located, myths of gaming, and information about the Oculus Quest 2 and VR</p>
+        </p>
+      </font>
+
+    <!-- code for second part of grid -->
+    </div>
+    <div class="item2">
+    </div>
+  </div>
+  </div>
+</body>
+</html>

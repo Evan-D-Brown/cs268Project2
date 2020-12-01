@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Myths Of Gaming </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+  <base target="_blank">
+
+  <style>
+    /* for top nav bar */
+    .topnav {
+      overflow: hidden;
+      background-color: white;
+      border: 2px solid;
+    }
+
+    /* for top nav bar attributes*/
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* for top nav bar hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* for middle blocks display */
+    li a {
+      display: block;
+      padding: 8px;
+      background-color: #dddddd;
+    }
+
+    /* flexbox */
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: DodgerBlue;
+      height: 200px;
+      justify-content: center;
+      background: linear-gradient(to left, DodgerBlue, aquamarine);
+    }
+
+
+    /* Delcaring items for gridbox */
+    .item1 {grid-area: header;}
+    .item2 {grid-area: menu;}
+
+
+
+    /* for grid */
+    .grid-container {
+      display: grid;
+      /* Aligning grid-areas */
+      grid-template-areas:
+      'header header header header menu menu'
+      /* Note 6 headers */
+      'header header header header menu menu';
+      /* Note 6 headers */
+      grid-gap: 10px;
+      background-color: black;
+      padding: 10px;
+      height: 60vh;
+      width: 100%;
+    }
+
+    /* for grids contents */
+    .grid-container>div {
+      background-color: white;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    /* for h2*/
+    h2 {
+      color: black;
+      font-size: 50px;
+    }
+
+    /* for h1*/
+    h1 {
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+      color: white;
+      font-size: 80px;
+      font-family: sans-serif;
+    }
+
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* container for page */
+    .container {
+      width: 100%;
+      background-color: #ddd;
+    }
+
+    /* for bar graph */
+    .skills {
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+    }
+
+    /* for bar graph */
+    .Osteoarthritis {
+      width: 83%;
+      background-color: #4CAF50;
+    }
+
+    /* for bar graph */
+    .Earlier_Death {
+      width: 30%;
+      background-color: #2196F3;
+    }
+
+    /* for bar graph */
+    .Heart  {
+      width: 35%;
+      background-color: #f44336;
+    }
+
+    /* for bar graph */
+    .Diabetes {
+      width: 50%;
+      background-color: #808080;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- code for top nav bar-->
+ <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="aboutus.html">About Us </a>
+    <a href="BuidlingPC.html">Build PC</a>
+  </div>
+
+  <!-- code for image -->
+  <p> <img style="width: 100%;"
+      src="https://i.ytimg.com/vi/tK3YZmH2UpM/maxresdefault.jpg" ath="myths"></p>
+
+
+
+
+
+
+
+
+  <!-- h2-->
+  <h2>Benefits of Gaming</h2>
+
+  <!-- for bar graph -->
+  <p>Lower Risk of Anxiety</p>
+  <div class="container">
+    <div class="skills Osteoarthritis">83%</div>
+  </div>
+
+  <!-- for bar graph -->
+  <p>Lower Risks of Depression</p>
+  <div class="container">
+    <div class="skills Diabetes">50%</div>
+  </div>
+
+  <!-- for bar graph -->
+  <p>Increases well-being .</p>
+  <div class="container">
+    <div class="skills Heart ">35%</div>
+  </div>
+
+  <!-- for bar graph -->
+  <p>Increases dopamine levels</p>
+  <div class="container">
+    <div class="skills Earlier_Death">30%</div>
+  </div>
+
+  <!-- for grid container at bottom -->
+  <div class="grid-container">
+    <div class="item1">
+      <font size="5">
+        
+        <p> Here are a few common myths of gaming </p>
+
+
+        <ul>
+            <li>Common Myths</li>   <!-- List item 1-->
+
+            <!--Creating a sub-list that will be alphabetic bullets starting at 'b' -->
+        <ol type = "1">      
+        <li>Only kids play video games.</li>
+        <li>Video games are pointless.</li>
+        <li>Violent video games are making children aggressive.</li>
+        <li>Video games rot the brain.</li>
+        <li>Games only have negative themes, such as violence and sex.</li>
+
+        </ol>
+    </ul>     
+
+        <p> A 2011 study conducted by the Entertainment Software Association (ESA) reveals that the average gamer age is 37. Yes, you read that correctly. The study also shows that kids actually make
+             up the smallest percentage of the gaming population; only 18 percent of gamers are ages 18 and under.  </p>
+        </p>
+      </font>
+    </div>
+
+     <!-- for other links at bottom -->
+    <div class="item2">
+      <h4 id="motivate" style="text-align: left;"><u> Note Sure where to get started? </u> </h4>
+      <font size="3">
+        Have a look at some of our resources for help!
+        <ol>
+          <li> <a href="LeagueOfLegends.html" style="background-color: white;"> Leauge Of Legends</a></li>
+          <li> <a href="OSRS.html" style="background-color: white;"> Old School Runescape</a></li>
+          <li> <a href="CounterStrike.html" style="background-color: white;"> Counter Strike</a></li>
+        </ol>
+      </font>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
