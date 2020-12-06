@@ -117,10 +117,10 @@
 
  <!-- code for top nav bar-->
  <div class="topnav">
-  <a class="active" href="index.html">Home</a>
-  <a href="contact.html">Contact</a>
-  <a href="aboutus.html">About Us </a>
-  <a href="BuidlingPC.html">Build PC</a>
+  <a class="active" href="index.html" target="_self">Home</a>
+  <a href="contact.html" target="_self">Contact</a>
+  <a href="aboutus.html" target="_self">About Us </a>
+  <a href="buildingpc.html" target="_self">Build PC</a>
 </div>
 
   <!-- code for image at top -->
@@ -155,9 +155,37 @@
     <div class="item5"> <a
         href=""> item5</a> </div>
   </div>
-  </div>
-  </div>
-  </div>
-  </div>
+    <h2>Need help? Tell us your budget and what you want to do with your computer!</h2>
+    <!--Form for requesting pc building help -->
+    <form>
+    <!-- Dividing webpage into sections -->
+    <div>
+      Full Name:
+      <input TYPE=“text” name="firstName" id="t_b_1">
+    </div>
+    <div>
+      Email:
+      <input name="lastName" id="t_b_2" type="text">
+    </div>
+    <div>
+      Budget (in $)
+      <input name="sleeve" list="sleeves" placeholder="">
+      <datalist id="sleeves">
+        <option value="Financial">
+        <option value="Orders">
+        <option value="Health">
+        <option value="Personel">
+      </datalist>
+    </div>
+    <B>What you want to do (stream, game, productivity)</B>
+    </div>
+    <div>
+      <textarea id="txt1" type="textarea" rows="10%" cols="50%"></textarea>
+    </div>
+    <div>
+      <input TYPE="submit" value="Submit">
+      <input type="reset">
+    </div>
+  </form>
 </body>
 </html>
