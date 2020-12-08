@@ -23,8 +23,10 @@
 
     // Escape user inputs for security
     $first_name = mysqli_real_escape_string($link, $_POST['firstName']);
-    $last_name = mysqli_real_escape_string($link, $_POST['destination']);
-    $email_address = mysqli_real_escape_string($link, $_POST['duration']);
+    $last_name = mysqli_real_escape_string($link, $_POST['email']);
+    $email_address = mysqli_real_escape_string($link, $_POST['sleeve']);
+
+
 
     //$first_name = mysqli_real_escape_string($link, $_POST['firstName']);
     //$last_name = mysqli_real_escape_string($link, $_POST['email']);
