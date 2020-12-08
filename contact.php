@@ -72,7 +72,7 @@
  <!-- code for top nav bar-->
  <div class="topnav">
   <a class="active" href="index.html" target="_self">Home</a>
-  <a href="contact.html" target="_self">Contact</a>
+  <a href="contact.php" target="_self">Contact</a>
   <a href="aboutus.html" target="_self">About Us </a>
   <a href="buildingpc.html" target="_self">Build PC</a>
 </div>
