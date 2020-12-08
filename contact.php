@@ -98,12 +98,12 @@
     </div>
     <div>
       Email Info:
-      <input name="lastName" id="t_b_2" type="text">
+      <input name="email" id="t_b_2" type="text">
     </div>
     <div>
       Department:
       <input name="sleeve" list="sleeves" placeholder="Departments">
-      <datalist id="sleeves">
+      <datalist id="sleeves" name = "sleeves">
         <option value="Financial">
         <option value="Orders">
         <option value="Health">
