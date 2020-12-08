@@ -30,11 +30,11 @@
    // $sql = "INSERT INTO flights (origin, destination, duration) VALUES ('$first_name', '$last_name', '$email_address')";
 
 
-    if(mysqli_query($link, $sql)){
-        echo "Contact Request added successfully.";
-    } else{
-        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-    }
+   // if(mysqli_query($link, $sql)){
+      //  echo "Contact Request added successfully.";
+   // } else{
+     //   echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+   // }
 
     // close connection
     mysqli_close($link);
