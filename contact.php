@@ -113,7 +113,7 @@
     <B>Comments?</B>
     </div>
     <div>
-      <textarea id="txt1" type="textarea" rows="10%" cols="50%"></textarea>
+      <textarea id="txt1" type="textarea" rows="10%" cols="50%" name = "box"></textarea>
     </div>
     <div>
       <input TYPE="submit" value="Submit">
