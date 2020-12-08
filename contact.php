@@ -90,7 +90,7 @@
   <!-- drop a line header -->
   <h2> Drop us a line</h2>
   <!-- form code -->
-  <form>
+  <form action="post_contact_data.php" method="post">
     <!-- Dividing webpage into sections -->
     <div>
       Full Name:
