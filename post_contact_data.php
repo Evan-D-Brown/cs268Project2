@@ -22,19 +22,23 @@
     }
 
     // Escape user inputs for security
-    //$first_name = mysqli_real_escape_string($link, $_POST['origin']);
-    //$last_name = mysqli_real_escape_string($link, $_POST['destination']);
-    //$email_address = mysqli_real_escape_string($link, $_POST['duration']);
+    $first_name = mysqli_real_escape_string($link, $_POST['firstName']);
+    $last_name = mysqli_real_escape_string($link, $_POST['email']);
+    $email_address = mysqli_real_escape_string($link, $_POST['sleeve']);
+
+    //$first_name = mysqli_real_escape_string($link, $_POST['firstName']);
+    //$last_name = mysqli_real_escape_string($link, $_POST['email']);
+    //$sleeves = mysqli_real_escape_string($link, $_POST['sleeve']);
 
     // attempt insert query execution
-   // $sql = "INSERT INTO flights (origin, destination, duration) VALUES ('$first_name', '$last_name', '$email_address')";
+    $sql = "INSERT INTO flights (origin, destination, duration) VALUES ('$first_name', '$last_name', '$email_address')";
 
 
-   // if(mysqli_query($link, $sql)){
-      //  echo "Contact Request added successfully.";
-   // } else{
-     //   echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-   // }
+    if(mysqli_query($link, $sql)){
+        echo "Contact Request added successfully.";
+    } else{
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+    }
 
     // close connection
     mysqli_close($link);
