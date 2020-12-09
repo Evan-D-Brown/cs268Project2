@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Contact Us </title>
+  <title>Join Us!</title>
   <base target="_blank">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="css/global.css">
@@ -15,7 +15,7 @@
       justify-content: center;
       background: linear-gradient(to left, DodgerBlue, aquamarine);
     }
-    
+
 
     /* for h2*/
     h2 {
@@ -36,24 +36,24 @@
   </style>
   <script>
     function validateForm() {
-      var x = document.forms["joinus"]["firstName"].value;
+      var x = document.forms["joinus"]["name"].value;
       if (x== "") {
-        alert("First name must be filled out")
+        alert("Name must be filled out")
         return false;
       }
-      x = document.forms["joinus"]["lastName"].value;
+      x = document.forms["joinus"]["ign"].value;
       if (x == "") {
-        alert("Last name must be filled out")
+        alert("IGN must be filled out")
         return false;
       }
-      x = document.forms["joinus"]["email"].value;
+      x = document.forms["joinus"]["games"].value;
       if (x == "") {
-        alert("Email must be filled out")
+        alert("Games must be filled out")
         return false;
       }
-      x = document.forms["joinus"]["sleeves"].value;
+      x = document.forms["joinus"]["rank"].value;
       if (x == "") {
-        alert("Department must be filled out")
+        alert("Rank must be filled out")
         return false;
       }
     }
@@ -62,7 +62,7 @@
 
 <body>
 
-   
+
  <!-- code for top nav bar-->
  <div class="topnav">
   <a class="active" href="index.html" target="_self">Home</a>
@@ -84,42 +84,37 @@
 
   <!-- code for the flex container at top-->
   <div class="flex-container" style="text-align: center;">
-    <h1>Contact Us</h1>
+    <h1>Join one of our teams!</h1>
   </div>
 
 
-  <!-- for image at the top -->
-  <p><img align=right src="https://mediad.publicbroadcasting.net/p/klcc/files/styles/x_large/public/201610/contact-us.jpg" alt="Weight Lifting"></p>
-
 
   <!-- drop a line header -->
-  <h2> Drop us a line</h2>
+  <h2>We have a CS:GO team and a LOL team</h2>
   <!-- form code -->
-  <form name="contact" action="post_contact_data.php" onsubmit="return validateForm()" method="post">
+  <form name="joinus" onsubmit="return validateForm()">
     <!-- Dividing webpage into sections -->
     <div>
-      First Name:
-      <input TYPE=“text” name="firstName" id="t_b_1">
+      Name:
+      <input TYPE=“text” name="name">
     </div>
     <div>
-      Last Name:
-      <input TYPE=“text” name="lastName" id="t_b_1">
+      IGN:
+      <input TYPE=“text” name="ign">
     </div>
     <div>
-      Email Info:
-      <input name="email" id="t_b_2" type="text">
+      <label for="games">Game:</label>
+      <select id="games" name="games">
+        <option value="0"></option>
+        <option value="1">CS:GO</option>
+        <option value="2">LOL</option>
+      </select>
     </div>
     <div>
-      Department:
-      <input name="sleeve" list="sleeves" placeholder="Departments">
-      <datalist id="sleeves" name = "sleeves">
-        <option value="Financial">
-        <option value="Orders">
-        <option value="Health">
-        <option value="Personel">
-      </datalist>
+      Rank:
+      <input TYPE="text" name="rank">
     </div>
-    <B>Comments?</B>
+    <B>About Yourself</B>
     <div>
       <textarea id="txt1" type="textarea" rows="10%" cols="50%" name = "box"></textarea>
     </div>
