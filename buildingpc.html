@@ -4,38 +4,19 @@
   <title>Building PC </title>
   <base target="_blank">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/global.css">
   <style>
-    /* for top nav bar */
-    .topnav {
-      overflow: hidden;
-      background-color: white;
-      border: 2px solid;
+    body{
+      background-color: #F4F4F3;
     }
-
-    /* for top nav bar attributes*/
-    .topnav a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    /* for top nav bar hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
     /* flexbox */
     .flex-container {
       display: flex;
       flex-wrap: nowrap;
-      background-color: DodgerBlue;
+      background-color: #F4F4F3;
       height: 300px;
       justify-content: center;
-      background: linear-gradient(to left, DodgerBlue, aquamarine);
+
     }
 
     /* Delcaring items */
@@ -81,6 +62,7 @@
       padding: 10px;
       height: 36vh;
       width: 100%;
+      background-color: #F4F4F3;
     }
 
     /* css to focus on div within grid container */
@@ -98,11 +80,6 @@
       height: 20%;
     }
 
-    /* for h2 */
-    h2 {
-      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
-      color: white;
-    }
 
     /* for h1 */
     h1 {
@@ -121,6 +98,17 @@
   <a href="contact.php" target="_self">Contact</a>
   <a href="aboutus.html" target="_self">About Us </a>
   <a href="buildingpc.html" target="_self">Build PC</a>
+  <div class="dropdown">
+    <button class="dropbtn">Games
+    <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="counterstrike.html">Counter Strike</a>
+      <a href="leagueoflegends.html">League of Legends</a>
+      <a href="osrs.html">Old School Runescape</a>
+      <a href="oculus.html">Oculus Games</a>
+    </div>
+  </div>
 </div>
 
   <!-- code for image at top -->
@@ -128,14 +116,15 @@
 
   <h1><b> Check Out These Different Kinds Of Hardware needed!</b></h1>
   <!-- The main grid container -->
+  <h2>Budget PC</h2>
   <div class="grid-container">
     <!-- grid boxes -->
     <div class="item1"><a
-        href=""> item1 </a></div>
+        href="https://pcpartpicker.com/product/6mm323/amd-ryzen-5-2600x-36ghz-6-core-processor-yd260xbcafbox">AMD Ryzen 5 2600x</a></div>
     <div class="item2"><a
-        href=""> item2 </a></div>
+        href="https://pcpartpicker.com/product/jXJtt6/asus-rog-strix-x470-f-gaming-atx-am4-motherboard-strix-x470-f-gaming"> Asus ROG STRIX x470-f Gaming Motherboard </a></div>
     <div class="item3"><a
-        href=""> item3 </a></div>
+        href="https://pcpartpicker.com/product/QDhKHx/corsair-vengeance-rgb-pro-16gb-2-x-8gb-ddr4-3200-memory-cmw16gx4m2c3200c16"> Corsair 2x8 Ram </a></div>
     <div class="item4"><a
         href="">item4 </a></div>
     <div class="item5"> <a

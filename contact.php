@@ -4,38 +4,8 @@
   <title> Contact Us </title>
   <base target="_blank">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-
+  <link rel="stylesheet" href="css/global.css">
   <style>
-    /* for background color */
-    body {
-      background-color: white;
-    }
-
-    /* for top nav bar */
-    .topnav {
-      overflow: hidden;
-      background-color: white;
-      border: 2px solid;
-    }
-
-    /* for top nav bar */
-    .topnav a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-
-    /* for top nav bar hover effect */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-
     /* flexbox */
     .flex-container {
       display: flex;
@@ -75,6 +45,17 @@
   <a href="contact.php" target="_self">Contact</a>
   <a href="aboutus.html" target="_self">About Us </a>
   <a href="buildingpc.html" target="_self">Build PC</a>
+  <div class="dropdown">
+    <button class="dropbtn">Games
+    <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="counterstrike.html">Counter Strike</a>
+      <a href="leagueoflegends.html">League of Legends</a>
+      <a href="osrs.html">Old School Runescape</a>
+      <a href="oculus.html">Oculus Games</a>
+    </div>
+  </div>
 </div>
 
   <!-- code for the flex container at top-->
