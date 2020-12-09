@@ -73,3 +73,40 @@
     .topnav a:hover, .dropdown:hover .dropbtn {
       background-color: red;
     }
+
+    /* flexbox 1*/
+    .flex-container1 {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: DodgerBlue;
+      height:100%;
+      background: #F4F4F3;
+      font-size: 70px;
+      text-align: left;
+      border: 2px solid black;
+    }
+
+
+    /* flexbox */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: DodgerBlue;
+      height: 100%;
+      background: white;
+      flex-direction: row;
+      border: 2px solid black;
+      justify-content: center;
+      align-items: center;
+    }
+
+  /* flexbox 2*/
+    .flex-container2 {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: #F4F4F3;
+      height: 100%;
+      font-size: 70px;
+      text-align: center;
+      border: 2px solid black;
+    }
