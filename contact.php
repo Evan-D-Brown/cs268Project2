@@ -50,10 +50,10 @@
     <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="counterstrike.html">Counter Strike</a>
-      <a href="leagueoflegends.html">League of Legends</a>
-      <a href="osrs.html">Old School Runescape</a>
-      <a href="oculus.html">Oculus Games</a>
+      <a href="counterstrike.html" target="_self">Counter Strike</a>
+      <a href="leagueoflegends.html" target="_self">League of Legends</a>
+      <a href="osrs.html" target="_self">Old School Runescape</a>
+      <a href="oculus.html" target="_self">Oculus Games</a>
     </div>
   </div>
 </div>
