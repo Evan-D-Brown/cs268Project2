@@ -38,7 +38,7 @@ $row['firstname'] . '</td><td align="left">' .
 $row['lastname'] . '</td><td align="left">' .
 $row['email'] . '</td><td align="left">' .
 $row['department'] . '</td><td align="left">' .
-$row['comment'] . '</td><td align="left">';
+$row['comments'] . '</td><td align="left">';
 
 echo '</tr>';
 }

@@ -23,19 +23,15 @@
 
     // Escape user inputs for security
     $first_name = mysqli_real_escape_string($link, $_POST['firstName']);  //name
-    $last_name = mysqli_real_escape_string($link, $_POST['LastName']); //for email
+    $last_name = mysqli_real_escape_string($link, $_POST['lastName']); //for email
     $email_address = mysqli_real_escape_string($link, $_POST['email']); //for email
     $departments = mysqli_real_escape_string($link, $_POST['sleeve']); //for box needs to be sleeves type
     $comments = mysqli_real_escape_string($link, $_POST['box']); //for box needs to be sleeves type
 
 
 
-    //$first_name = mysqli_real_escape_string($link, $_POST['firstName']);
-    //$last_name = mysqli_real_escape_string($link, $_POST['email']);
-    //$sleeves = mysqli_real_escape_string($link, $_POST['sleeve']);
-
     // attempt insert query execution
-    $sql = "INSERT INTO flights (origin, destination, duration) VALUES ('$first_name', '$last_name', '$email_address')";
+    $sql = "INSERT INTO contact (firstname, lastname, email, department, comments) VALUES ('$first_name', '$last_name', '$email_address', '$departments', '$comments')";
 
 
     if(mysqli_query($link, $sql)){
