@@ -34,6 +34,30 @@
       margin: 10px;
     }
   </style>
+  <script>
+    function validateForm() {
+      var x = document.forms["joinus"]["firstName"].value;
+      if (x== "") {
+        alert("First name must be filled out")
+        return false;
+      }
+      x = document.forms["joinus"]["lastName"].value;
+      if (x == "") {
+        alert("Last name must be filled out")
+        return false;
+      }
+      x = document.forms["joinus"]["email"].value;
+      if (x == "") {
+        alert("Email must be filled out")
+        return false;
+      }
+      x = document.forms["joinus"]["sleeves"].value;
+      if (x == "") {
+        alert("Department must be filled out")
+        return false;
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -71,7 +95,7 @@
   <!-- drop a line header -->
   <h2> Drop us a line</h2>
   <!-- form code -->
-  <form action="post_contact_data.php" method="post">
+  <form name="contact" action="post_contact_data.php" onsubmit="return validateForm()" method="post">
     <!-- Dividing webpage into sections -->
     <div>
       First Name:
@@ -79,7 +103,7 @@
     </div>
     <div>
       Last Name:
-      <input TYPE=“text” name="LastName" id="t_b_1">
+      <input TYPE=“text” name="lastName" id="t_b_1">
     </div>
     <div>
       Email Info:
