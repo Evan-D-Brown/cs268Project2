@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Contact Us </title>
+  <title>Join Us!</title>
   <base target="_blank">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="css/global.css">
@@ -34,6 +34,30 @@
       margin: 10px;
     }
   </style>
+  <script>
+    function validateForm() {
+      var x = document.forms["joinus"]["name"].value;
+      if (x== "") {
+        alert("Name must be filled out")
+        return false;
+      }
+      x = document.forms["joinus"]["ign"].value;
+      if (x == "") {
+        alert("IGN must be filled out")
+        return false;
+      }
+      x = document.forms["joinus"]["games"].value;
+      if (x == "") {
+        alert("Games must be filled out")
+        return false;
+      }
+      x = document.forms["joinus"]["rank"].value;
+      if (x == "") {
+        alert("Rank must be filled out")
+        return false;
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -68,7 +92,7 @@
   <!-- drop a line header -->
   <h2>We have a CS:GO team and a LOL team</h2>
   <!-- form code -->
-  <form>
+  <form name="joinus" onsubmit="return validateForm()">
     <!-- Dividing webpage into sections -->
     <div>
       Name:
@@ -81,7 +105,7 @@
     <div>
       <label for="games">Game:</label>
       <select id="games" name="games">
-        <option value="0">Choose a game:</option>
+        <option value="0"></option>
         <option value="1">CS:GO</option>
         <option value="2">LOL</option>
       </select>
