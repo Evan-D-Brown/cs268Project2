@@ -72,7 +72,7 @@
  <!-- code for top nav bar-->
  <div class="topnav">
   <a class="active" href="index.html" target="_self">Home</a>
-  <a href="contact.html" target="_self">Contact</a>
+  <a href="contact.php" target="_self">Contact</a>
   <a href="aboutus.html" target="_self">About Us </a>
   <a href="buildingpc.html" target="_self">Build PC</a>
 </div>
@@ -90,7 +90,7 @@
   <!-- drop a line header -->
   <h2> Drop us a line</h2>
   <!-- form code -->
-  <form>
+  <form action="post_contact_data.php" method="post">
     <!-- Dividing webpage into sections -->
     <div>
       Full Name:
@@ -98,12 +98,12 @@
     </div>
     <div>
       Email Info:
-      <input name="lastName" id="t_b_2" type="text">
+      <input name="email" id="t_b_2" type="text">
     </div>
     <div>
       Department:
       <input name="sleeve" list="sleeves" placeholder="Departments">
-      <datalist id="sleeves">
+      <datalist id="sleeves" name = "sleeves">
         <option value="Financial">
         <option value="Orders">
         <option value="Health">
@@ -112,7 +112,7 @@
     </div>
     <B>Comments?</B>
     <div>
-      <textarea id="txt1" type="textarea" rows="10%" cols="50%"></textarea>
+      <textarea id="txt1" type="textarea" rows="10%" cols="50%" name = "box"></textarea>
     </div>
     <div>
       <input TYPE="submit" value="Submit">
