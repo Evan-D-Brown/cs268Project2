@@ -156,6 +156,17 @@
     }
 
   </style>
+  <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      var paragraph = document.getElementById("paragraph")
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+      imgText.scrollIntoView();
+    }
+  </script>
 </head>
 
 <body>
@@ -234,23 +245,13 @@
       <img src="images/vertigo.jpg" alt="vertigo" style="width:100%" onclick="myFunction(this);">
     </div>
   </div>
-  
+
   <div class="container">
     <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
     <img id="expandedImg" style="width:50%">
     <div id="imgtext"></div>
   </div>
-  
-  <script>
-    function myFunction(imgs) {
-      var expandImg = document.getElementById("expandedImg");
-      var imgText = document.getElementById("imgtext");
-      var paragraph = document.getElementById("paragraph")
-      expandImg.src = imgs.src;
-      imgText.innerHTML = imgs.alt;
-      expandImg.parentElement.style.display = "block";
-      imgText.scrollIntoView();
-    }
-  </script>
+
+
 </body>
 </html>
