@@ -80,6 +80,7 @@
       <a href="oculus.html" target="_self">Oculus Games</a>
     </div>
   </div>
+  <a href="joinus.html" target="_self">Join us!</a>
 </div>
 
   <!-- code for the flex container at top-->
