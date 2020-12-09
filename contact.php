@@ -74,8 +74,12 @@
   <form action="post_contact_data.php" method="post">
     <!-- Dividing webpage into sections -->
     <div>
-      Full Name:
+      First Name:
       <input TYPE=“text” name="firstName" id="t_b_1">
+    </div>
+    <div>
+      Last Name:
+      <input TYPE=“text” name="LastName" id="t_b_1">
     </div>
     <div>
       Email Info:
