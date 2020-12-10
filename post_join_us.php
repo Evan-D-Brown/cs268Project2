@@ -21,14 +21,6 @@
         die("ERROR: Could not connect. " . mysqli_connect_error());
     }
 
-    // Escape user inputs for security
-    /*
-    $first_name = mysqli_real_escape_string($link, $_POST['firstName']);  //name
-    $last_name = mysqli_real_escape_string($link, $_POST['lastName']); //for email
-    $email_address = mysqli_real_escape_string($link, $_POST['email']); //for email
-    $departments = mysqli_real_escape_string($link, $_POST['sleeve']); //for box needs to be sleeves type
-    $comments = mysqli_real_escape_string($link, $_POST['box']); //for box needs to be sleeves type
-    */
 
     $name = mysqli_real_escape_string($link, $_POST['name']);  //name
     $IGN = mysqli_real_escape_string($link, $_POST['ign']); //for email
@@ -38,7 +30,7 @@
 
 
     // attempt insert query execution
-    $sql = "INSERT INTO joinus ('name', ign, game, 'rank', about) VALUES ('$name', '$IGN', '$games', '$rank', '$comments')";
+    $sql = "INSERT INTO joinus (name, ign, game, rank, about) VALUES ('$name', '$IGN', '$games', '$rank', '$comments')";
 
 
     if(mysqli_query($link, $sql)){
