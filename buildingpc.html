@@ -147,11 +147,15 @@
   </div>
     <h2>Need help? Tell us your budget and what you want to do with your computer!</h2>
     <!--Form for requesting pc building help -->
-    <form>
+    <form name="pcpost" action="post_pc.php" onsubmit="return validateForm()" method="post">
     <!-- Dividing webpage into sections -->
     <div>
-      Full Name:
+      First Name:
       <input TYPE=“text” name="firstName" id="t_b_1">
+    </div>
+    <div>
+      Last Name:
+      <input TYPE=“text” name="lastname" id="t_b_1">
     </div>
     <div>
       Email:
@@ -159,17 +163,17 @@
     </div>
     <div>
       Budget (in $)
-      <input name="sleeve" list="sleeves" placeholder="">
-      <datalist id="sleeves">
-        <option value="Financial">
-        <option value="Orders">
-        <option value="Health">
-        <option value="Personel">
+      <input name="budget" list="budget" placeholder="">
+      <datalist id="budget">
+        <option value="$1000">
+        <option value="$1500">
+        <option value="$2000">
+        <option value="$3000">
       </datalist>
     </div>
     <B>What you want to do (stream, game, productivity)</B>
     <div>
-      <textarea id="txt1" type="textarea" rows="10%" cols="50%"></textarea>
+      <textarea id="txt1" type="textarea" rows="10%" cols="50%" name = "box"></textarea>
     </div>
     <div>
       <input TYPE="submit" value="Submit">
